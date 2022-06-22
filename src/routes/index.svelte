@@ -2,4 +2,6 @@
 	import Hero from '$lib/ui-components/hero.svelte';
 </script>
 
-<Hero />
+<section class="h-[200vh]">
+	<Hero />
+</section>
