@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Snowburst+One&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	font-family: 'Work Sans', sans-serif;
+}
+
+body {
+	min-height: 100vh;
+	margin: 0;
+	background-color: #f6f8fe;
+	color: #464646;
+}
