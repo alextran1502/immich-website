@@ -13,7 +13,6 @@
 			delay: anime.stagger(200, { start: 0 }),
 			autoplay: false
 		});
-
 		const featureAnimation = anime({
 			targets: [
 				'.feature-text-1',
@@ -31,7 +30,6 @@
 				console.log('feature text completed');
 			}
 		});
-
 		anime({
 			targets: '.title-text',
 			opacity: [0, 1],
@@ -46,7 +44,9 @@
 	});
 </script>
 
-<section class="hero-section w-full h-full bg-immich-bg">
+<section
+	class="gap-[20px] w-full h-full bg-immich-bg sm:grid sm:grid-cols-[repeat(12,1fr)] sm:grid-rows-[repeat(12,1fr)] mt-32 sm:mt-0"
+>
 	<div
 		class="title-text max-h-full col-start-5 col-end-9 row-start-2 row-end-5 text-center flex place-items-center flex-col"
 	>
@@ -73,71 +73,71 @@
 	<img
 		src="/hero-img-1.png"
 		alt="hero-img-mobile-login-screen"
-		class="hero-img-1 max-h-full object-contain col-start-2 col-span-2 row-start-2 row-end-5"
+		class="m-auto mt-10 sm:mt-0 sm:block hero-img-1 h-[500px] sm:h-full sm:max-h-full object-contain col-start-2 col-span-2 row-start-2 row-end-5"
 	/>
 
 	<img
 		src="/hero-img-2.png"
 		alt="hero-img-mobile-home-screen"
-		class="hero-img-2 max-h-full object-contain col-start-11 col-span-2 row-start-2 row-span-3"
+		class="m-auto mt-10 sm:mt-0  sm:flex  hero-img-2 h-[500px] sm:h-full sm:max-h-full object-contain col-start-11 col-span-2 row-start-2 row-span-3"
 	/>
 
 	<img
 		src="/hero-img-3.png"
 		alt="hero-img-web-home-screen"
-		class="hero-img-3 h-full object-contain col-start-9 col-span-full row-start-5 row-end-[8]"
+		class="m-auto mt-10 sm:mt-0  sm:flex hero-img-3 h-full object-contain col-start-9 col-span-full row-start-5 row-end-[8]"
 	/>
 
 	<img
 		src="/hero-img-4.png"
 		alt="hero-img-mobile-backup-screen"
-		class="hero-img-4 max-h-full object-contain col-start-5 col-span-2 row-start-5 row-span-3"
+		class="m-auto mt-10 sm:mt-0  sm:flex hero-img-4 h-[500px] sm:h-full sm:max-h-full object-contain col-start-5 col-span-2 row-start-5 row-span-3"
 	/>
 
 	<img
 		src="/hero-img-5.png"
 		alt="hero-img-mobile-search-screen"
-		class="hero-img-5 max-h-full object-contain col-start-2 col-span-2 row-start-6 row-span-3"
+		class="m-auto mt-10 sm:mt-0  sm:flex hero-img-5 h-[500px] sm:h-full sm:max-h-full object-contain col-start-2 col-span-2 row-start-6 row-span-3"
 	/>
 
 	<img
 		src="/hero-img-6.png"
 		alt="hero-img-mobile-detail-screen"
-		class="hero-img-6 max-h-full object-contain col-start-10 col-span-2 row-start-[8] row-span-3"
+		class="m-auto mt-10 sm:mt-0  sm:flex hero-img-6 h-[500px] sm:h-full sm:max-h-full object-contain col-start-10 col-span-2 row-start-[8] row-span-3"
 	/>
 
 	<img
 		src="/hero-img-7.png"
 		alt="hero-img-web-admin-screen"
-		class="hero-img-7 object-fit col-start-1 col-span-8 row-start-[10] row-span-2"
+		class="m-auto mt-10 sm:mt-0  sm:flex hero-img-7 object-fit col-start-1 col-span-8 row-start-[10] row-span-2"
 	/>
 
 	<div
-		class="feature-text-1 bg-[#d44e3c] text-white font-bold col-start-10 col-span-1 row-start-3 row-span-1 flex place-items-center place-content-center rounded-[20px] text-center w-[120px] h-[120px]"
+		class="hidden sm:flex feature-text-1 bg-[#d44e3c] text-white font-bold col-start-10 col-span-1 row-start-3 row-span-1 place-items-center place-content-center rounded-[20px] text-center w-[120px] h-[120px]"
 	>
 		<p>Native <br /> Mobile <br /> App</p>
 	</div>
 
 	<div
-		class="feature-text-2 bg-[#FFB800] text-white font-bold col-start-3 col-span-1 row-start-5 row-span-1 flex place-items-center place-content-center rounded-[20px] text-center w-[120px] h-[120px]"
+		class="hidden sm:flex feature-text-2 bg-[#FFB800] text-white font-bold col-start-3 col-span-1 row-start-5 row-span-1 place-items-center place-content-center rounded-[20px] text-center w-[120px] h-[120px]"
 	>
 		<p>Privacy</p>
 	</div>
 
 	<div
-		class="feature-text-3 bg-[#31A452] text-white font-bold col-start-7 col-end-9 row-start-[8] row-span-1 flex place-items-center place-content-center rounded-[20px] text-center w-[240px] h-[120px]"
+		class="hidden sm:flex feature-text-3 bg-[#31A452] text-white font-bold col-start-7 col-end-9 row-start-[8] row-span-1 place-items-center place-content-center rounded-[20px] text-center w-[240px] h-[120px]"
 	>
 		<p>High Performance <br /> Web App</p>
 	</div>
 
 	<div
-		class="feature-text-4 bg-[#4081EF] text-white font-bold col-start-2 col-span-1 row-start-[9] row-span-2 my-24 flex place-items-center place-content-center rounded-[20px] text-center "
+		class="hidden sm:flex feature-text-4 bg-[#4081EF] text-white font-bold col-start-2 col-span-1 row-start-[9] row-span-2 my-24 place-items-center place-content-center rounded-[20px] text-center "
 	>
 		<p>Object Detection</p>
 	</div>
 
 	<div
-		class="feature-text-5 bg-[#D183B1] text-white font-bold col-start-10 col-span-2 row-start-[11] row-span-2 m-28 flex place-items-center place-content-center rounded-[20px] text-center"
+		class="hidden sm:flex feature-text-5 bg-[#D183B1] text-white font-bold col-start-10 col-span-1 row-start-[11] row-span-1 place-items-center place-content-center rounded-[20px] text-center"
 	>
 		<p>Multi-user support <br /> and <br /> User Management</p>
 	</div>
