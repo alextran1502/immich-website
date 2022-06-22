@@ -4,16 +4,17 @@
 	import anime from 'animejs';
 	import { onMount } from 'svelte';
 
-	onMount(() => {
-		anime({
+	onMount(async () => {
+		const imageAnimation = anime({
 			targets: ['.hero-img-1', '.hero-img-2', '.hero-img-3', '.hero-img-4', '.hero-img-5'],
 			translateY: [150, 0],
 			easing: 'spring(1, 80, 10, 0)',
 			opacity: [0, 1],
-			delay: anime.stagger(200, { start: 300 })
+			delay: anime.stagger(200, { start: 0 }),
+			autoplay: false
 		});
 
-		const featureTextAnimation = anime({
+		const featureAnimation = anime({
 			targets: [
 				'.feature-text-1',
 				'.feature-text-2',
@@ -24,14 +25,30 @@
 			scale: [1.5, 1],
 			easing: 'spring(1, 80, 10, 0)',
 			opacity: [0, 1],
-			delay: anime.stagger(200, { start: 1000 })
+			delay: anime.stagger(200, { start: 1000 }),
+			autoplay: false,
+			complete: () => {
+				console.log('feature text completed');
+			}
+		});
+
+		anime({
+			targets: '.title-text',
+			opacity: [0, 1],
+			translateY: [50, 0],
+			duration: 1000,
+			easing: 'easeInOutQuad',
+			complete: () => {
+				imageAnimation.play();
+				featureAnimation.play();
+			}
 		});
 	});
 </script>
 
 <section class="hero-section w-full h-full bg-immich-bg">
 	<div
-		class="max-h-full col-start-5 col-end-9 row-start-2 row-end-5 text-center flex place-items-center flex-col"
+		class="title-text max-h-full col-start-5 col-end-9 row-start-2 row-end-5 text-center flex place-items-center flex-col"
 	>
 		<p class="text-immich-primary text-[64px]">/&#712;imij/</p>
 		<p class="max-w-[70%] md:text-base lg:text-2xl xl:text-4xl my-10 font-light">
