@@ -142,12 +142,3 @@
 		<p>Multi-user support <br /> and <br /> User Management</p>
 	</div>
 </section>
-
-<style>
-	.hero-section {
-		display: grid;
-		grid-template-columns: repeat(12, 1fr);
-		grid-template-rows: repeat(12, 1fr);
-		gap: 20px;
-	}
-</style>
