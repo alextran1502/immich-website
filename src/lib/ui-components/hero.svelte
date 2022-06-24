@@ -71,43 +71,43 @@
 	</div>
 
 	<img
-		src="/hero-img-1.png"
+		src="/hero-img-1.webp"
 		alt="hero-img-mobile-login-screen"
 		class="m-auto mt-10 sm:mt-0 sm:block hero-img-1 h-[500px] sm:h-full sm:max-h-full object-contain col-start-2 col-span-2 row-start-2 row-end-5"
 	/>
 
 	<img
-		src="/hero-img-2.png"
+		src="/hero-img-2.webp"
 		alt="hero-img-mobile-home-screen"
 		class="m-auto mt-10 sm:mt-0  sm:flex  hero-img-2 h-[500px] sm:h-full sm:max-h-full object-contain col-start-11 col-span-2 row-start-2 row-span-3"
 	/>
 
 	<img
-		src="/hero-img-3.png"
+		src="/hero-img-3.webp"
 		alt="hero-img-web-home-screen"
 		class="m-auto mt-10 sm:mt-0  sm:flex hero-img-3 h-full object-contain col-start-9 col-span-full row-start-5 row-end-[8]"
 	/>
 
 	<img
-		src="/hero-img-4.png"
+		src="/hero-img-4.webp"
 		alt="hero-img-mobile-backup-screen"
 		class="m-auto mt-10 sm:mt-0  sm:flex hero-img-4 h-[500px] sm:h-full sm:max-h-full object-contain col-start-5 col-span-2 row-start-5 row-span-3"
 	/>
 
 	<img
-		src="/hero-img-5.png"
+		src="/hero-img-5.webp"
 		alt="hero-img-mobile-search-screen"
 		class="m-auto mt-10 sm:mt-0  sm:flex hero-img-5 h-[500px] sm:h-full sm:max-h-full object-contain col-start-2 col-span-2 row-start-6 row-span-3"
 	/>
 
 	<img
-		src="/hero-img-6.png"
+		src="/hero-img-6.webp"
 		alt="hero-img-mobile-detail-screen"
 		class="m-auto mt-10 sm:mt-0  sm:flex hero-img-6 h-[500px] sm:h-full sm:max-h-full object-contain col-start-10 col-span-2 row-start-[8] row-span-3"
 	/>
 
 	<img
-		src="/hero-img-7.png"
+		src="/hero-img-7.webp"
 		alt="hero-img-web-admin-screen"
 		class="m-auto mt-10 sm:mt-0  sm:flex hero-img-7 object-fit col-start-1 col-span-8 row-start-[10] row-span-2"
 	/>

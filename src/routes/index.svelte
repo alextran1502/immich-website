@@ -10,6 +10,14 @@
 
 <svelte:head>
 	<title>Self-hosted media backup solution | Immich</title>
+	<meta
+		name="description"
+		content="open source, high performance self-hosted backup solution for videos and photos on your mobile phone, Immich, google photos, alternative to google photos, images, media"
+	/>
+	<meta
+		name="robots"
+		content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+	/>
 </svelte:head>
 
 <NavBar />
